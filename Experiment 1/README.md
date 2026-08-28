@@ -228,7 +228,7 @@ The dashboard enables users to monitor sales performance, analyze customers and 
 
 ## 👩‍💻 Author
 
-**Pragathi**
+**Pragna Chelsiya**
 
 **Course:** Business Analytics  
 **Tool:** Microsoft Power BI  
