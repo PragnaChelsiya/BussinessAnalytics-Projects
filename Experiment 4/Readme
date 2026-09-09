@@ -1,0 +1,162 @@
+# Data Cleaning Using Power Query
+
+## 📌 Project Overview
+
+This project demonstrates how to clean and prepare a customer sales dataset using **Microsoft Power Query** before performing data analysis.
+
+The original dataset contains:
+- Missing values
+- Duplicate records
+- Inconsistent entries
+- `ERROR` values
+- `UNKNOWN` values
+- Incorrect or inconsistent data types
+
+Power Query was used to transform the raw dataset into a clean and analysis-ready dataset.
+
+---
+
+## 🎯 Objective
+
+The main objective of this project is to:
+
+- Identify missing values
+- Handle inconsistent entries
+- Remove duplicate records
+- Standardize categorical data
+- Correct data types
+- Prepare the dataset for further analysis and visualization
+
+---
+
+## 📂 Dataset
+
+**Dataset:** `dirty_cafe_sales.csv`
+
+### Columns
+
+| Column | Description |
+|---|---|
+| Transaction ID | Unique transaction identifier |
+| Item | Product purchased |
+| Quantity | Number of items purchased |
+| Price Per Unit | Price of one item |
+| Total Spent | Total transaction amount |
+| Payment Method | Method used for payment |
+| Location | Transaction location |
+| Transaction Date | Date of transaction |
+
+---
+
+## 🧹 Data Cleaning Steps
+
+### 1. Duplicate Removal
+
+Duplicate transaction records were checked using **Transaction ID** and duplicate records were removed using Power Query.
+
+### 2. Missing Value Handling
+
+Missing values were handled according to the column type.
+
+- Categorical columns → `Unknown`
+- Numeric columns → `null`
+- Date column → `null`
+
+### 3. Inconsistent Value Handling
+
+The dataset contained values such as:
+
+- `ERROR`
+- `UNKNOWN`
+- Blank values
+
+These values were standardized appropriately.
+
+For categorical columns, invalid entries were replaced with:
+
+`Unknown`
+
+For numeric and date columns, invalid values were retained as:
+
+`null`
+
+### 4. Text Cleaning
+
+Text columns were cleaned using Power Query's **Trim** function to remove unnecessary spaces.
+
+### 5. Data Type Correction
+
+The following data types were applied:
+
+| Column | Data Type |
+|---|---|
+| Transaction ID | Text |
+| Item | Text |
+| Quantity | Whole Number |
+| Price Per Unit | Decimal Number |
+| Total Spent | Decimal Number |
+| Payment Method | Text |
+| Location | Text |
+| Transaction Date | Date |
+
+---
+
+## 🛠️ Tools Used
+
+- Microsoft Excel
+- Power Query
+- GitHub
+
+---
+
+## 📊 Before Cleaning
+
+The original dataset contained missing values, `ERROR`, and `UNKNOWN` entries across multiple columns.
+
+![Before Cleaning](screenshots/before-cleaning.png)
+
+---
+
+## ✨ After Cleaning
+
+The cleaned dataset contains standardized values and appropriate data types, making it ready for analysis.
+
+![After Cleaning](screenshots/after-cleaning.png)
+
+---
+
+## 📸 Power Query Steps
+
+The cleaning process was performed using Power Query's **Applied Steps**, including:
+
+- Changed Type
+- Replaced Values
+- Duplicate Removal
+- Text Cleaning
+- Data Type Conversion
+
+![Power Query Applied Steps](screenshots/applied-steps.png)
+
+---
+
+## 📈 Result
+
+After cleaning:
+
+- Missing values were handled
+- Inconsistent entries were standardized
+- Duplicate records were removed
+- Data types were corrected
+- The dataset was prepared for analysis
+
+---
+
+## 📝 Conclusion
+
+Power Query provides an efficient way to clean and transform raw datasets without manually editing thousands of records. The cleaned customer sales dataset is now structured and ready for further analysis, reporting, and visualization.
+
+---
+
+## 👩‍💻 Author
+
+**Pragna Chelsiya**
